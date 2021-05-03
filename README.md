@@ -1,7 +1,7 @@
 # Chia-Plot-Copy (windows only)
 Copies Chia plots from the directory the batch file is started in to the configured destination.
 
-![Screenshot](https://github.com/cracklingice/Chia-Plot-Copy/blob/main/Chia-Plot-Copy.JPG)
+![Screenshot](screenshot.jpg)
 
 To use Chia Plot Copy:  
 Save plotcopy.bat to the folder you are plotting into.  This could be the SSD you are using for temp or a staging SSD.  
