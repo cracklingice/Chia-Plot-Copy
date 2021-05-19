@@ -3,7 +3,7 @@ CLS
 setlocal
 rem ### settings - Cannot have spaces in destination directory ###
 rem
-set destination=U:\Chia_Plots
+set destination=
 rem
 rem ### end settings do not edit below this line ###
 if not %destination:~-1%==\ set destination=%destination%\
