@@ -1,14 +1,14 @@
 @ECHO off
 CLS
 setlocal
-rem ### settings - Cannot have spaces in destination directory - EX: P:\Plots ###
+rem ### settings - Cannot have spaces in destination directory ###
 rem
-set destination=P:\Plots
+set destination=U:\Chia_Plots
 rem
 rem ### end settings do not edit below this line ###
 if not %destination:~-1%==\ set destination=%destination%\
 if not exist %destination% echo Destination does not exist.  Please check configuration. & pause & goto :EOF
-title Chia Plot Copy %~dp0 to %destination%
+title Plot Copy %~dp0 to %destination%
 echo %date% %time:~0,-3% Started Plot Copy & echo %time:~0,-3% %date% Started Plot Copy >> plotcopylog.txt
 set first=1
 :LOOP
@@ -76,7 +76,7 @@ set timed=
 goto loop
 goto :eof
 :timer
-timeout /t 60 /nobreak > nul
+timeout /t 15 /nobreak > nul
 goto loop
 goto :eof
 :set
